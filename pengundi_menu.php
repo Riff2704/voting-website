@@ -24,7 +24,7 @@
   <ul>
     <li>
       <?php
-        if(isset($_SESSION["idpengguna"]))
+        if (isset($_SESSION["idpengguna"]))
           echo "<a href='logout.php'><b>LOG KELUAR</b></a>";
         else
           echo "<a href='login.php'><b>LOG MASUK</b></a>";
@@ -34,8 +34,8 @@
 
   <?php
     if (isset($_SESSION["idpengguna"])) {
-      $idpengguna = $_SESSION["idpengguna"];
-      $sql = "select * from pengundi where idpengundi ='$idpengundi'";
+      $idpengundi = $_SESSION["idpengguna"];
+      $sql = "select * from pengundi where idpengundi = '$idpengundi' ";
       $result = mysqli_query($sambungan, $sql);
       $pengundi = mysqli_fetch_array($result);
       echo "<h5>Selamat datang $pengundi[namapengundi]</h5>";
