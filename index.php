@@ -2,13 +2,13 @@
 include("sambungan.php");
 include("pengundi_menu.php");
 
-echo "<link rel='stylesheet'href='button.css'>";
+echo "<link rel='stylesheet' href='button.css'>";
 echo "<main>";
 
 $sql = "select * from calon";
 $result = mysqli_query($sambungan, $sql);
 
-if (isset($_SESSION["idpengguna"])){
+if (isset($_SESSION["idpengguna"])) {
    $idpengundi = $_SESSION["idpengguna"];
    echo "<form method='post' action='pengundi_undi.php'>";
    echo "<div class=gambar>";
@@ -32,8 +32,9 @@ $sql = "select * from pengundi
      
      $result = mysqli_query($sambungan, $sql);
      while($undian = mysqli_fetch_array($result)) {
-        if($undian['idpengundi'] == $idpengundi && $undian['idcalon'] != "C00") {
+        if ($undian['idpengundi'] == $idpengundi && $undian['idcalon'] != "C00") {
            $namacalon = $undian['namacalon'];
+           $sudah_mengundi = true;
            break;
         }
      }
