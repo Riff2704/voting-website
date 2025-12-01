@@ -2,7 +2,7 @@
   $nama_database = "undi";
   
   $sambungan = mysqli_connect("localhost", "root", "", $nama_database);
-  if ( !$sambubgan ) {
+  if ( !$sambungan ) {
         die("sambungan gagal");
   }
 ?>
