@@ -24,5 +24,6 @@
              <td><img width= 100 src= 'imej/$calon[gambar]'></td>
              <td>$calon[moto]</td>
             </tr>";
+    }
   ?>
 </table>
