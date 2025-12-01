@@ -18,7 +18,7 @@
             $sql = "select * from pengundi";
             $data = mysqli_query($sambungan, $sql);
             while($pengundi = mysqli_fetch_array($data)){
-              echo "<option value='$pengundi[idpengundi'>
+              echo "<option value='$pengundi[idpengundi]'>
               $pengundi[namapengundi]</option>";
             }
           ?>
