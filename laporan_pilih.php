@@ -11,7 +11,7 @@
 <form action="laporan_cetak.php" method="post">
   <table>
     <tr>
-      <td>Jenis laporan</td>
+      <td>Jenis Laporan</td>
       <td>
         <select id='pilih' name='pilih' onchange='papar_pilihan()'>
           <option value=1>Keputusan ikut Jumlah Undi</option>
