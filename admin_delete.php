@@ -9,4 +9,3 @@
 
   echo "<script>window.location='admin_senarai.php'</script>";
 ?>
-
