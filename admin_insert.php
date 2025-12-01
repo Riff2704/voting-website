@@ -5,7 +5,7 @@
   include("sambungan.php");
   include("admin_menu.php");
 
-  if(isset($_POST["submit"])) {
+  if (isset($_POST["submit"])) {
     $idadmin = $_POST["idadmin"];
     $password = $_POST["password"];
     $namaadmin = $_POST["namaadmin"];
@@ -15,7 +15,7 @@
     if ($result == true)
       echo "<h4>Berjaya tambah</h4>";
     else
-      echo"</h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
+      echo "<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
   }
 ?>
 
