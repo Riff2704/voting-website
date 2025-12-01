@@ -49,7 +49,7 @@
   </ul>
   <ul>
     <li>
-      <a href="logout.php><b>LOG KELUAR</b></a>
+      <a href="logout.php"><b>LOG KELUAR</b></a>
     </li>
   </ul>
 </nav>
