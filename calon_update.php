@@ -6,7 +6,7 @@
   include("sambungan.php");
   include("admin_menu.php");
 
-  if(isset($_POST["submit"])) {
+  if (isset($_POST["submit"])) {
     $idcalon = $_POST["idcalon"];
     $namacalon = $_POST["namacalon"];
     $moto = $_POST["moto"];
@@ -22,14 +22,14 @@
     if ($result == true)
       echo "<h4>Berjaya kemaskini</h4>";
     else
-      echo"<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
+      echo "<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
   }
 
   // idcalon dari fail calon_senarai.php
   if (isset($_GET["idcalon"]))
       $idcalon = $_GET["idcalon"];
 
-    $sql = "select * from calon where idcalon = '$idcalon'";
+    $sql = "select * from calon where idcalon = '$idcalon' ";
     $result = mysqli_query($sambungan, $sql);
     while($calon = mysqli_fetch_array($result)) {
       $namacalon = $calon["namacalon"];
@@ -50,7 +50,7 @@
     </tr>
     <tr>
       <td>Nama Calon</td>
-      <td><input type="text" name"namacalon" value="<?php echo $namacalon; ?>"></td>
+      <td><input type="text" name="namacalon" value="<?php echo $namacalon; ?>"></td>
     </tr>
     <tr>
       <td class="warna">Gambar 350x320</td>
