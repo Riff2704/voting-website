@@ -18,7 +18,7 @@
     $result = mysqli_query($sambungan, $sql);
     while($pengundi = mysqli_fetch_array($result)) {
       $idpengundi = $pengundi["idpengundi"];
-      echo "<tr> <td>$pengundi["idpengundi"]</td>
+      echo "<tr> <td>$pengundi[idpengundi]</td>
               <td class='nama'>$pengundi[namapengundi]</td>
               <td>$pengundi[password]</td>
               <td>
@@ -38,7 +38,7 @@
 
 <script>
   function padam(id) {
-    if(confirm("Adakah anda ingin padam") == true) {
+    if (confirm("Adakah anda ingin padam") == true) {
       window.location="pengundi_delete.php?idpengundi=" + id;
     }
   }
