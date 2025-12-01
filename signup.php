@@ -1,6 +1,6 @@
-<php?
+<?php
  include("sambungan.php");
- include("pengundi.php");
+ include("pengundi_menu.php");
 
  if(isset($_POST["submit"])) {
      $idpengundi = $_POST["idpengundi"];
@@ -11,12 +11,12 @@
      $sql = "insert into pengundi values('$idpengundi', '$password', '$namapengundi', 'C00')";
      $result = mysqli_query($sambungan, $sql);
      if ($result) {
-         echo "<script>alert('Berjaya singup')</script>";
+         echo "<script>alert('Berjaya signup')</script>";
          echo "<script>window.location='index.php'</script>";
      }
      else {
-        echo"<script>alert('Tidak berjaya singup')</script>";
-        echo"<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
+        echo "<script>alert('Tidak berjaya signup')</script>";
+        echo "<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
      }
    }
 ?>
@@ -25,8 +25,8 @@
 <link rel="stylesheet" href="button.css">
 
 <body>
-  <h3>SIGN UP,/h3>
-  <form name="borang" action="signup.pgp" method="post">
+  <h3>SIGN UP</h3>
+  <form name="borang" action="signup.php" method="post">
   <table>
     <tr>
        <td class="saiz">ID Pengundi</td>
@@ -53,10 +53,10 @@
 
 <script>
    function semak() {
-      var borang = document.forms["borang];
+      var borang = document.forms["borang"];
       var idpengundi = borang["idpengundi"].value.trim();
 
-      //Semak had bawah dan had atas
+      // Semak had bawah dan had atas
       if (idpengundi.length !== 4) {
           alert("IDPengundi mesti tepat 4 aksara");
           return false;
@@ -65,7 +65,7 @@
       //Jika semua ok, submit form
       borang.submit();
     }
-    fucntion ubahSaiz(saiz) {
+    function ubahSaiz(saiz) {
       var elemen = document.getElementsByClassName("saiz");
       for (var i = 0; i < elemen.length; i++) {
           elemen[i].style.fontSize = saiz + "px";
