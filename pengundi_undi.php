@@ -1,23 +1,23 @@
 <?php
   include("sambungan.php");
 
-  if(isset($_POST["submit"])) {
+  if (isset($_POST["submit"])) {
     $idpengundi = $_POST["idpengundi"];
     $idcalon = $_POST["idcalon"];
 
     $sudah_undi = false;
 
-    $sql = "select * from pengundi where idpengundi = '$idpengundi'";
+    $sql = "select * from pengundi where idpengundi = '$idpengundi' ";
     $result = mysqli_query($sambungan, $sql);
     while($pengundi = mysqli_fetch_array($result)) {
       $password = $pengundi['password'];
       $namapengundi = $pengundi['namapengundi'];
-      if ($pengundi['idcalon'] !='C00')
+      if ($pengundi['idcalon'] != 'C00')
         $sudah_undi = true;
     }
 
     if ($sudah_undi == false) {
-      $sql = "update pengundi set idcalon = 'idcalon'
+      $sql = "update pengundi set idcalon = '$idcalon'
               where idpengundi = '$idpengundi'";
       $result = mysqli_query($sambungan, $sql);
       if ($result == true)
