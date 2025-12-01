@@ -27,12 +27,12 @@
              <td><img width= 100 src= 'imej/$calon[gambar]'></td>
              <td>$calon[moto]</td>
              <td>
-               <a href='calon_update.php?idcalon=$idcalon' title='delete'>
+               <a href='calon_update.php?idcalon=$idcalon' title='update'>
                  <img src='imej/refresh.png'>
                </a>
              </td>
              <td>
-               <a href='javascript:padam(\"$idcalon\");'title='delete'>
+               <a href='javascript:padam(\"$idcalon\");' title='delete'>
                  <img src='imej/delete.png'>
                </a>
              </td>
@@ -43,7 +43,7 @@
 
 <script>
   function padam(id) {
-    if(confirm("Adakah anda ingin padam") == true) {
+    if (confirm("Adakah anda ingin padam") == true) {
       window.location = "calon_delete.php?idcalon=" + id;
     }
   }
