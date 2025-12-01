@@ -2,7 +2,7 @@
   include("sambungan.php");
   include("admin_menu.php");
 
-  if(isset($_POST["submit"])) {
+  if (isset($_POST["submit"])) {
     $idcalon = $_POST["idcalon"];
     $namacalon = $_POST["namacalon"];
     $moto = $_POST["moto"];
@@ -12,10 +12,10 @@
     $sementara = $_FILES["namafail"]["tmp_name"];
     move_uploaded_file($sementara, "imej/".basename($namafail));
 
-    $sql = "insert into calon values('idcalon', '$namacalon', '$namafail', '$moto', '$idadmin')";
+    $sql = "insert into calon values('$idcalon', '$namacalon', '$namafail', '$moto', '$idadmin')";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
-      echo "<h4>Berjaya tambah</h4>
+      echo "<h4>Berjaya tambah</h4>";
     else
       echo "<h4>Ralat : $sql<br>".mysqli_error($sambungan)."</h4>";
   }
