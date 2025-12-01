@@ -2,12 +2,12 @@
   include("sambungan.php");
   include("admin_menu.php");
 
-  if(isset($_POST["submit"])) {
+  if (isset($_POST["submit"])) {
     $idpengundi = $_POST["idpengundi"];
     $password = $_POST["password"];
     $namapengundi = $_POST["namapengundi"];
 
-    //C00 adalah calon yang kosong - menandakan pengundi belum mengundi
+    // C00 adalah calon yang kosong - menandakan pengundi belum mengundi
     $sql = "insert into pengundi values('$idpengundi', '$password', '$namapengundi', 'C00')";
     $result = mysqli_query($sambungan, $sql);
     if ($result == true)
