@@ -6,7 +6,7 @@ button {
    color: darkolivegreen;
 
    width: 110px;
-   padding: 7px 8px 7px 32px;
+   padding : 7px 8px 7px 32px;
    border: 1px solid darkolivegreen;
    border-radius: 7px;
    margin-top: 8px;
@@ -44,4 +44,5 @@ button.papar {
 
 button.cari {
    background-image: url(imej/search.png);
+
 }
