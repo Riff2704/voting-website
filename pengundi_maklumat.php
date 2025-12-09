@@ -17,7 +17,7 @@
   }
 ?>
 
-<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="senarai.css">
 <link rel="stylesheet" href="button.css">
 
 <main>
