@@ -1,12 +1,14 @@
 body {
-  background-image: url(imej/back.jpg);
+  background-image: url(imej/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0px;
 }
 
 h5 {
   font-family: verdana;
   font-size: 16px;
-  color: black;
+  color: #aaa9a9;
 }
 
 p.arahan {
@@ -80,22 +82,22 @@ ul li a {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
-  color: black;
+  color: #bfbfc1;
   text-decoration: none;
 
   width: 115px;
   padding: 8px 10px;
   border: 3px solid black;
   border-radius: 25px;
-  background-color: rgba(206, 152, 88, 0.63);
+  background-color: rgba(65, 70, 108, 0.63);
   margin: 4px 15px 4px 0px;
   display: block;
   box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.56);
 }
 
 ul li a:hover {
-  color: black;
-  background-color: yellow;
+  color: #362f4d;
+  background-color: #b5b5b5;
 }
 
 li:hover ul {
