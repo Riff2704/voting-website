@@ -1,5 +1,5 @@
 body {
-  background-image: url(imej/back.jpg);
+  background-image: url(imej/background.jpg);
 }
 
 p.saiz {
@@ -76,3 +76,4 @@ td:nth-child(1) {
 
    width: 200px;
 }
+
