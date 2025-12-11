@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="senarai.css">
 
 <table>
-  <caption>SENARAI CALON</caption>
+  <caption>SENARAI MOTOR</caption>
   <tr>
     <th>ID</th>
     <th>Nama</th>
