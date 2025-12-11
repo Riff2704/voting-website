@@ -25,7 +25,7 @@
   <table>
     <tr>
       <td class="saiz">ID Pengundi</td>
-      <td><input type="text" name="idpengundi" placeholder="cth: U065"></td>
+      <td><input type="text" name="idpengundi" placeholder="cth: C065"></td>
     </tr>
     <tr>
       <td class="saiz">Nama Pengundi</td>
