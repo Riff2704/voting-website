@@ -34,7 +34,7 @@
     </tr>
     <tr>
        <td class="saiz">Nama Pengundi</td>
-       <td><input required type="text" name="namapengundi" placeholder="Cth: Adreanna"></td>
+       <td><input required type="text" name="namapengundi" placeholder="Cth: Fatimah"></td>
     </tr>
     <tr>
        <td class="saiz">Password</td>
