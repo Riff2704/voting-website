@@ -2,7 +2,7 @@
   include("sambungan.php");
   include("admin_menu.php");
 
-  if (isset($_POST["submit"])) {
+  if(isset($_POST["submit"])) {
     $namajadual = $_POST["namajadual"];
     $namafail = $_FILES["namafail"]["name"];
     $sementara = $_FILES["namafail"]["tmp_name"];
